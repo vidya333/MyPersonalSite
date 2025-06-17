@@ -1,0 +1,263 @@
+/* Custom CSS for Vidya Tandel's Portfolio */
+
+:root {
+    --primary-color: #dac09e; /* Bootstrap primary blue */
+    --secondary-color: #6c757d; /* Bootstrap secondary gray */
+    --dark-bg: #212529; /* Dark background for navbar and footer */
+    --light-bg: #f8f9fa; /* Light background for sections */
+    --text-dark: #343a40;
+    --text-light: #ffffff;
+    --card-bg: #ffffff;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background:url(/assets/image/duniya.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 56px; /* Adjust for fixed navbar height */
+}
+
+/* Navbar Customizations */
+.navbar {
+    background-color: var(--dark-bg) !important;
+    box-shadow: 0 2px 5px var(--shadow-light);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-light) !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1510511459019-5dda7724fdab?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    background-attachment: fixed; /* Parallax effect */
+    color: var(--text-light);
+    text-shadow: 0 2px 4px var(--shadow-medium);
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .lead {
+    font-size: 1.75rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-medium);
+}
+
+.btn-outline-light {
+    color: var(--text-light);
+    border-color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--text-light);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-medium);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block; /* For the underline effect */
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* About Section */
+.profile-img {
+    /* border: 5px solid var(--primary-color); */
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.03);
+}
+
+/* Skills Section */
+.skill-card {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow-medium) !important;
+}
+
+.skill-card .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.skill-card .card-text {
+    color: var(--text-dark);
+}
+
+/* Experience Section */
+.experience-card {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    padding: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    box-shadow: 0 10px 20px var(--shadow-medium);
+}
+
+.experience-card .list-group-item {
+    border: none;
+    padding-left: 0;
+    color: var(--text-dark);
+    font-size: 1.05rem;
+}
+
+.experience-card .list-group-item::before {
+    content: "\2022"; /* Bullet point character */
+    color: var(--primary-color);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Projects Section */
+.project-card {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow-medium) !important;
+}
+
+.project-card .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Contact Section */
+#contact {
+    background-color: var(--dark-bg);
+}
+
+#contact .section-title::after {
+    background-color: var(--primary-color);
+}
+
+.contact-info li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contact-info li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg) !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.social-icons a {
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* General Spacing */
+section {
+    padding: 80px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    .hero-section .lead {
+        font-size: 1.25rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .profile-img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+    .btn-lg {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+    }
+}
