@@ -1,214 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vidya Tandel - Front End Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Vidya Tandel</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">Vidya Tandel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <section id="home" class="hero-section d-flex align-items-center justify-content-center text-white text-center">
-        <div class="container">
-            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">Hi, I'm Vidya Tandel</h1>
-            <p class="lead mt-3 animate__animated animate__fadeInUp">
-                Developer | GuitArtist | Blogger - Dream Draw Develop ∞
-            </p>
-            <div class="mt-4 animate__animated animate__fadeInUp animate__delay-1s">
-                <a href="#projects" class="btn btn-primary btn-lg me-3">View Projects</a>
-                <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
-            </div>
+    <section
+      id="home"
+      class="hero-section d-flex align-items-center justify-content-start text-white"
+    >
+      <div class="container">
+        <p class="lead monospace">Hey, My name is</p>
+        <h3
+          class="display-3 fw-semibold animate__animated animate__fadeInDown -mt-4"
+        >
+          Vidya Tandel
+        </h3>
+        <p style="height: 50px" class="monospace">
+          <span
+            class="lead mt-3 animate__animated animate__fadeInUp"
+            id="typed-output"
+          ></span>
+          <span class="lead mt-3 animate__animated animate__fadeInUp"
+            class="typed-output">
+            _
+          </span>
+        </p>
+        <div class="mt-4 animate__animated animate__fadeInUp animate__delay-1s">
+          <a href="#projects" class="btn btn-primary btn-lg me-3"
+            >View Projects</a
+          >
+          <a href="#contact" class="btn btn-outline-light btn-lg"
+            >Get in Touch</a
+          >
         </div>
+      </div>
     </section>
 
     <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="section-title mb-4">About Me</h2>
-                    <p class="lead">My objective is to gain technical experience and make a significant contribution to the success of the company as a Front End Developer.</p>
-                    <p>I am passionate about creating intuitive and dynamic user interfaces. With a strong foundation in modern web technologies and a keen eye for design, I strive to build seamless and engaging web experiences for users across all devices. My journey as a Full Stack Developer  has equipped me with a comprehensive understanding of both front-end and basic back-end development, allowing me to approach projects with a holistic perspective.</p>
-                    <p>I'm always eager to learn new technologies and apply best practices to deliver high-quality, performant applications.</p>
-                </div>
-                <div class="col-md-6 text-center mt-4 mt-md-0">
-                    <img src="assets/image/profile.jpeg" alt="Vidya Tandel Profile" class="img-fluid  shadow-lg profile-img">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="section-title mb-4">About Me</h2>
+            <p class="lead">
+              Hi, I’m Vidya — A Full Stack Developer, Guitarist, Visual Artist,
+              and Blogger who lives by the mantra: Dream · Draw · Develop. I
+              believe every idea starts as a dream, takes shape through art, and
+              comes alive with technology. As a creative thinker, I blend logic
+              with imagination , turning abstract thoughts into digital
+              experiences and expressive artworks. I hold a Bachelor’s in
+              Engineering from LTCOE, Navi Mumbai, and currently work as a
+              React.js Developer. Outside of code, you’ll find me strumming
+              melodies, painting stories, or sharing my thoughts through blogs.
+              Let’s connect, collaborate, and create something meaningful.
+            </p>
+          </div>
+          <div class="col-md-6 text-center mt-4 mt-md-0">
+            <img
+              src="assets/image/profile.jpeg"
+              alt="Vidya Tandel Profile"
+              class="img-fluid shadow-lg profile-img"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="skills" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Technical Skills</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card h-100 shadow-sm skill-card">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-code"></i> Front-End Development</h5>
-                            <p class="card-text">HTML5, CSS3, Bootstrap, JavaScript, React.js, NextJs, Tailwind </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm skill-card">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-tools"></i> Tools</h5>
-                            <p class="card-text">VS Code, npm </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm skill-card">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-code-branch"></i> Version Control</h5>
-                            <p class="card-text">Git, GitHub </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm skill-card">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-database"></i> Basic Knowledge</h5>
-                            <p class="card-text">Python, Django, MySQL </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm skill-card">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-paint-brush"></i> Additional Skills</h5>
-                            <p class="card-text">Photoshop, Figma </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Technical Skills</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100 shadow-sm skill-card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fas fa-code"></i> Coding
+                </h5>
+                <p class="card-text">
+                  HTML5, CSS3, Bootstrap, JavaScript, React.js, NextJs,
+                  Tailwind, MongoDb
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm skill-card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-tools"></i> Tools</h5>
+                <p class="card-text">VS Code, npm, PyCharm, Postman, Vite, Redux</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm skill-card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fas fa-code-branch"></i>DevOps Tools
+                </h5>
+                <p class="card-text">Git, GitHub, Netlify, Vercel, Hostinger</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm skill-card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fas fa-database"></i> Basic Knowledge
+                </h5>
+                <p class="card-text">Python, Django, MySQL</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm skill-card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fas fa-paint-brush"></i> Additional Skills
+                </h5>
+                <p class="card-text">Photoshop, Figma</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="experience" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Experience</h2>
-            <div class="card shadow-lg experience-card">
-                <div class="card-body">
-                    <h4 class="card-title">React JS Developer Intern - Across The Globe (ATG)</h4>
-                    <p class="card-subtitle mb-2 text-muted">Banglore | July 2024 - April 2025 </p>
-                    <ul class="list-group list-group-flush mt-3">
-                        <li class="list-group-item">Focused on UI enhancements and functionality bug fixes in ReactJS applications. </li>
-                        <li class="list-group-item">Collaborated with backend developers to resolve API integration and functionality issues. </li>
-                        <li class="list-group-item">Debugged and optimized front-end performance for a seamless user experience. </li>
-                        <li class="list-group-item">Worked with Git for version control and participated in pull request reviews. </li>
-                        <li class="list-group-item">Contributed to the development and maintenance of UkiyoStays.com, a luxury villa rental platform, ensuring smooth booking functionality, enhancing UI responsiveness, and resolving key user experience issues. </li>
-                        <li class="list-group-item">Coordinated with backend teams to fix API-related bugs and improve overall platform performance. </li>
-                        <li class="list-group-item">Completed regular assessments to evaluate coding proficiency, problem-solving skills, and adherence to best practices. </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+   <section id="experience" class="py-5 bg-light">
+   <div class="container">
+    <h2 class="section-title text-center mb-5">Experience</h2>
+
+    <!-- ATG Experience Card -->
+    <div class="card shadow-lg experience-card mb-4">
+      <div class="card-body">
+        <h4 class="card-title">
+          React JS Developer Intern - Across The Globe (ATG) - Banglore
+        </h4>
+        <p class="card-subtitle mb-2 text-muted">
+          Remote | July 2024 - April 2025
+        </p>
+        <ul class="list-group list-group-flush mt-3">
+          <li class="list-group-item py-1 mb-1">
+            Focused on UI enhancements and functionality bug fixes in ReactJS applications.
+          </li>
+          <li class="list-group-item py-1 mb-1">
+            Collaborated with backend developers to resolve API integration and functionality issues.
+          </li>
+          <li class="list-group-item py-1 mb-1">
+            Debugged and optimized front-end performance for a seamless user experience.
+          </li>
+          <li class="list-group-item py-1 mb-1">
+            Worked with Git for version control and participated in pull request reviews.
+          </li>
+          <li class="list-group-item py-1 mb-1">
+            Contributed to the development and maintenance of UkiyoStays.com, a luxury villa rental platform, ensuring smooth booking functionality, enhancing UI responsiveness, and resolving key user experience issues.
+          </li>
+          <li class="list-group-item py-1 mb-1">
+            Coordinated with backend teams to fix API-related bugs and improve overall platform performance.
+          </li>
+          <li class="list-group-item py-1 mb-1">
+            Completed regular assessments to evaluate coding proficiency, problem-solving skills, and adherence to best practices.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tansark Experience Card -->
+    <div class="card shadow-lg experience-card">
+      <div class="card-body">
+        <h4 class="card-title">
+          Code Mentor – Tansark (Coding · AI · Robotics · STEM)
+        </h4>
+        <p class="card-subtitle mb-2 text-muted">
+          Pune | April 2025 - May 2025
+        </p>
+        <ul class="list-group list-group-flush mt-3">
+          <li class="list-group-item py-1 mb-1">
+            Taught school and college students programming concepts across Python and beginner AI topics.
+          </li>
+          <li class="list-group-item py-1 mb-1">
+            Delivered interactive coding sessions focused on creativity, logic, and real-world problem-solving.
+          </li>
+          <li class="list-group-item py-1 mb-1">
+            Conducted a hands-on summer workshop where students created a dinosaur image using Python and game development library - Pygame.
+          </li>
+          <li class="list-group-item py-1 mb-1">
+            Helped students build a strong STEM foundation combining coding with curiosity and innovation.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+   </section>
 
     <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">My Projects</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card h-100 shadow-sm project-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Ketan Kids School</h5>
-                            <p class="card-text">Created an engaging and educational website for Ketan Kids School. Developed interactive features to enhance the learning experience for children. Ensured the site is fully responsive and accessible on all devices. Implemented clear and easy-to-navigate sections for various educational resources. Used vibrant colors and playful designs to attract and retain children's interest.</p>
-                            <a href="https://github.com/vidya333/Ketan-Kids-School" target="_blank" class="btn btn-outline-primary mt-3">Live Link / GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm project-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Green Corner Advisory</h5>
-                            <p class="card-text">Designed a responsive and visually appealing website for Green Corner Advisory. Implemented a user-friendly navigation bar for seamless Browse. Integrated interactive elements such as hover effects to enhance user engagement. Organized content into well-structured sections to ensure clarity and ease of access. Used images and icons effectively to improve the overall visual appeal of the site.</p>
-                            <a href="https://github.com/vidya333/Green-Corner-Advisory" target="_blank" class="btn btn-outline-primary mt-3">Live Link / GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm project-card">
-                        <div class="card-body">
-                            <h5 class="card-title">BCSA Website</h5>
-                            <p class="card-text">A comprehensive website for the Bhartiya Computer Saksharata Abhiyan. Emphasized accessibility and user experience in the design. Structured content to highlight key organizational information and updates. Ensured cross-browser compatibility and responsive design. Utilized a clean and professional aesthetic to align with the organization's branding.</p>
-                            <a href="https://github.com/vidya333/BCSA-Website" target="_blank" class="btn btn-outline-primary mt-3">Live Link / GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm project-card">
-                        <div class="card-body">
-                            <h5 class="card-title">React Travel Site Application</h5>
-                            <p class="card-text">Built a travel site using React to showcase popular travel destinations. Integrated interactive maps and search functionality. Employed responsive design techniques to ensure compatibility across devices. Focused on user-friendly navigation and dynamic content updates. Used modern React hooks and state management for efficient performance.</p>
-                            <a href="https://github.com/vidya333/React-Travel-Site" target="_blank" class="btn btn-outline-primary mt-3">Live Link / GitHub</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title text-center mb-5">My Projects</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body">
+                <h5 class="card-title">Project Ketan Kids School</h5>
+                <p class="card-text">
+                  Created an engaging and educational website for Ketan Kids
+                  School. Developed interactive features to enhance the learning
+                  experience for children. Ensured the site is fully responsive
+                  and accessible on all devices. Implemented clear and
+                  easy-to-navigate sections for various educational resources.
+                  Used vibrant colors and playful designs to attract and retain
+                  children's interest.
+                </p>
+                <a
+                  href="https://vidya333.github.io/ProjectKetanKidsSchool/"                  
+                  target="_blank"
+                  class="btn btn-outline-primary mt-3"
+                  >Live Link</a
+                >
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body">
+                <h5 class="card-title">Green Corner Advisory</h5>
+                <p class="card-text">
+                  Designed a responsive and visually appealing website for Green
+                  Corner Advisory. Implemented a user-friendly navigation bar
+                  for seamless Browse. Integrated interactive elements such as
+                  hover effects to enhance user engagement. Organized content
+                  into well-structured sections to ensure clarity and ease of
+                  access. Used images and icons effectively to improve the
+                  overall visual appeal of the site.
+                </p>
+                <a
+                  href="https://vidya333.github.io/GreenCornerAdvisory/"
+                  target="_blank"
+                  class="btn btn-outline-primary mt-3"
+                  >Live Link</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body">
+                <h5 class="card-title">BCSA Website</h5>
+                <p class="card-text">
+                  A comprehensive website for the Bhartiya Computer Saksharata
+                  Abhiyan. Emphasized accessibility and user experience in the
+                  design. Structured content to highlight key organizational
+                  information and updates. Ensured cross-browser compatibility
+                  and responsive design. Utilized a clean and professional
+                  aesthetic to align with the organization's branding.
+                </p>
+                <a
+                  href="https://vidya333.github.io/BCSA_WebSite/"
+                  target="_blank"
+                  class="btn btn-outline-primary mt-3"
+                  >Live Link</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm project-card">
+              <div class="card-body">
+                <h5 class="card-title">React Travel Site Application</h5>
+                <p class="card-text">
+                  Built a travel site using React to showcase popular travel
+                  destinations. Integrated interactive maps and search
+                  functionality. Employed responsive design techniques to ensure
+                  compatibility across devices. Focused on user-friendly
+                  navigation and dynamic content updates. Used modern React
+                  hooks and state management for efficient performance.
+                </p>
+                <a
+                  href="https://react-travelsite-momondo.netlify.app/"
+                  target="_blank"
+                  class="btn btn-outline-primary mt-3"
+                  >Live Link</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="contact" class="py-5 bg-dark text-white">
-        <div class="container text-center">
-            <h2 class="section-title text-white mb-4">Get in Touch</h2>
-            <p class="lead">Always looking for opportunities to connect , create , and collaborate !</p>
-            <ul class="list-unstyled contact-info mt-4">
-                <li><i class="fas fa-envelope"></i> vidya.nk07@gmail.com </li>
-                <li><i class="fab fa-github"></i> <a href="https://github.com/vidya333" target="_blank" class="text-white">github.com/vidya333</a> </li>
-                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vidya333" target="_blank" class="text-white">linkedin.com/in/vidya333</a> </li>
-                <li><i class="fab fa-medium"></i> <a href="https://medium.com/@vidyatandel" target="_blank" class="text-white">medium.com/@vidyatandel</a> </li>
-            </ul>
-        </div>
+    <section id="contact" class="py-5 bg-dark text-white ">
+      <div class="container text-center">
+        <h2 class="section-title text-white mb-4">Get in Touch</h2>
+        <p class="lead">
+          Always looking for opportunities to connect , create , and collaborate
+          !
+        </p>
+        <ul
+          class="list-unstyled contact-info mt-4 d-flex justify-content-center"
+        >
+          <li class="h4">
+            <a href="mailto: vidya.nk07@gmail.com ">
+              <i class="fas fa-envelope mx-2 h3" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li class="h4">
+            <a
+              href="https://github.com/vidya333"
+              target="_blank"
+              class="text-white"
+            >
+              <i class="fab fa-github mx-2 h3" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li class="h4">
+            <a
+              href="https://www.linkedin.com/in/vidya333"
+              target="_blank"
+              class="text-white"
+            >
+              <i class="fab fa-linkedin mx-2 h3" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li class="h4">
+            <a
+              href="https://medium.com/@vidyatandel"
+              target="_blank"
+              class="text-white"
+            >
+              <i class="fab fa-medium mx-2 h3" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li class="h4">
+            <a
+              href="https://www.instagram.com/breathingnotes3/"
+              target="_blank"
+              class="text-white"
+            >
+              <i class="fab fa-instagram mx-2 h3" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li class="h4">
+            <a
+              href="https://x.com/vidya_tandel"
+              target="_blank"
+              class="text-white"
+            >
+              <i class="fab fa-twitter mx-2 h3" style="color: #ffffff"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <footer class="bg-dark text-white-50 py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 Vidya Tandel. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="https://github.com/vidya333" target="_blank" class="text-white mx-2"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/vidya333" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://medium.com/@vidyatandel" target="_blank" class="text-white mx-2"><i class="fab fa-medium fa-2x"></i></a>
-            </div>
-        </div>
+    <footer class="bg-dark text-white-50 py-2">
+      <div class="container text-center">
+        <p>&copy; 2025 Vidya Tandel. All rights reserved.</p>
+      </div>
     </footer>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#typed-output", {
+        strings: ["I am a Developer, GuitArtist and Blogger "],
+        typeSpeed: 90,
+        //backSpeed: 50000,
+        loop: false,
+      });
+    </script>
+    <script>
+      var typed = new Typed(".typed-output", {
+        strings: ["_"],
+        typeSpeed: 2,
+        backSpeed: 2,
+        loop: true,
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
